@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="702dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Панель поиска -->
+            <EditText
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/white"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:drawablePadding="8dp"
+                android:hint="Поиск товаров"
+                android:padding="12dp" />
+
+            <!-- Категории товаров -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <Button
+                        android:id="@+id/buttonAllProducts"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button_background"
+                        android:text="Все товары" />
+
+
+                    <Button
+                        android:id="@+id/button_small_seti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/rounded_button_background"
+                        android:text="Оборудование для малых сетей"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/rounded_button_background"
+                        android:text="Видеонаблюдение"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button_prof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/rounded_button_background"
+                        android:text="Профессиональное оборудование"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/button_guard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/rounded_button_background"
+                        android:text="Защита и элементы питания"
+                        android:textColor="@android:color/white" />
+
+                    <!-- Добавьте больше категорий по необходимости -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Популярные товары -->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popularProductsRecyclerView"
+                android:layout_width="387dp"
+                android:layout_height="528dp"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Нижнее навигационное меню -->
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#996750A4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/navigation_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Главная"
+            android:src="@drawable/ic_home" />
+
+
+        <ImageView
+            android:id="@+id/navigation_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Корзина"
+            android:src="@drawable/baseline_add_shopping_cart_24" />
+
+        <ImageView
+            android:id="@+id/navigation_profile"
+            android:layout_width="18dp"
+            android:layout_height="23dp"
+            android:layout_weight="1"
+            android:contentDescription="Профиль"
+            android:src="@drawable/profile_jjyeuy5kuk27" />
+    </LinearLayout>
+</RelativeLayout>

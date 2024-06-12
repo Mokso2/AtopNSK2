@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AtopNSK</string>
+    <string name="enter">Войти</string>
+    <string name="enter_after">Войти позже</string>
+    <string name="vhod">Вход</string>
+    <string name="atop_nsk">Atop-Nsk</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Пароль</string>
+    <string name="title">Вход
+</string>
+    <string name="reg">Нет аккаунта? Зарегистрируйтесь</string>
+    <string-array name="product_categories">
+        <item>Оборудование для малых сетей</item>
+        <item>Видеонаблюдение</item>
+        <item>Профессиональное оборудование</item>
+        <item>Защита и элементы питания</item>
+    </string-array>
+    <string-array name="order_statuses">
+        <item>В обработке</item>
+        <item>Обработан</item>
+        <item>Сборка</item>
+        <item>Доставка</item>
+        <item>Доставлен</item>
+    </string-array>
+    <string name="employee">Я сотрудник</string>
+    <string name="regg">Регистрация</string>
+    <string name="zareg">Зарегистрироваться</string>
+    <string name="vhodd">Уже есть аккаунт? Войдите</string>
+    <string name="reset_link_sent">Письмо успешно отправлено вам на почту</string>
+</resources>

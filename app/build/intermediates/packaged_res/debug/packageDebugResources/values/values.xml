@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_statuses">
+        <item>В обработке</item>
+        <item>Обработан</item>
+        <item>Сборка</item>
+        <item>Доставка</item>
+        <item>Доставлен</item>
+    </string-array>
+    <string-array name="product_categories">
+        <item>Оборудование для малых сетей</item>
+        <item>Видеонаблюдение</item>
+        <item>Профессиональное оборудование</item>
+        <item>Защита и элементы питания</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="button_color">#FF1DDE7D</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">AtopNSK</string>
+    <string name="atop_nsk">Atop-Nsk</string>
+    <string name="email_hint">Email</string>
+    <string name="employee">Я сотрудник</string>
+    <string name="enter">Войти</string>
+    <string name="enter_after">Войти позже</string>
+    <string name="gcm_defaultSenderId" translatable="false">726725867356</string>
+    <string name="google_api_key" translatable="false">AIzaSyBT0XfOgLiEeT5nq9Txrpjly88WrLviD6w</string>
+    <string name="google_app_id" translatable="false">1:726725867356:android:5e2168b16ae19406b7b399</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBT0XfOgLiEeT5nq9Txrpjly88WrLviD6w</string>
+    <string name="google_storage_bucket" translatable="false">atopnsk-61e6d.appspot.com</string>
+    <string name="password_hint">Пароль</string>
+    <string name="project_id" translatable="false">atopnsk-61e6d</string>
+    <string name="reg">Нет аккаунта? Зарегистрируйтесь</string>
+    <string name="regg">Регистрация</string>
+    <string name="reset_link_sent">Письмо успешно отправлено вам на почту</string>
+    <string name="title">Вход
+</string>
+    <string name="vhod">Вход</string>
+    <string name="vhodd">Уже есть аккаунт? Войдите</string>
+    <string name="zareg">Зарегистрироваться</string>
+    <style name="Base.Theme.AtopNSK2" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="Theme.AtopNSK2" parent="Base.Theme.AtopNSK2"/>
+    <style name="title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#DE000000</item>
+    </style>
+</resources>

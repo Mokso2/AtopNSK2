@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+  <TextView
+      android:id="@+id/textViewAddEmployee"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Добавить сотрудника"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="32dp"/>
+
+  <EditText
+      android:id="@+id/editTextEmployeeEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Email"
+      android:inputType="textEmailAddress"
+      android:layout_below="@id/textViewAddEmployee"
+      android:layout_marginTop="16dp"
+      android:padding="12dp"
+      android:background="@android:color/white"/>
+
+  <EditText
+      android:id="@+id/editTextEmployeePassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Пароль"
+      android:inputType="textPassword"
+      android:layout_below="@id/editTextEmployeeEmail"
+      android:layout_marginTop="16dp"
+      android:padding="12dp"
+      android:background="@android:color/white"/>
+
+  <CheckBox
+      android:id="@+id/checkBoxIsDirector"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Директор"
+      android:layout_below="@id/editTextEmployeePassword"
+      android:layout_marginTop="16dp"/>
+
+  <Button
+      android:id="@+id/buttonAddEmployee"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Добавить сотрудника"
+      android:textColor="@android:color/white"
+      android:background="@drawable/rounded_button_background"
+      android:layout_below="@id/checkBoxIsDirector"
+      android:layout_marginTop="24dp"/>
+</RelativeLayout>

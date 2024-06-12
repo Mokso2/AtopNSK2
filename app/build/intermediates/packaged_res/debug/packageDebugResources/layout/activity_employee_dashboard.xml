@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/textViewDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Панель управления сотрудника"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/buttonOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заказы"
+        android:layout_below="@id/textViewDashboard"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonOrderHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="История заказов"
+        android:layout_below="@id/buttonOrders"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить товар"
+        android:layout_below="@id/buttonOrderHistory"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonAddEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить сотрудника"
+        android:layout_below="@id/buttonAddProduct"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
